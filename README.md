@@ -1,10 +1,16 @@
 # Docker_kafka
-cd Docker_kafka_core
-./build.sh
-cd ..
-./run_kafka_core.sh
-./stop_kafka_core.sh
+build images
+```
+cd Docker_kafka_core;
+./build.sh;
+```
 
+start contatiner
+```
+cd ..;
+./run_kafka_core.sh;
+./stop_kafka_core.sh;
+```
 
 
 # command orders
