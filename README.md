@@ -1,19 +1,23 @@
 # Docker_kafka
-build images
+
+## build images
 ```
 cd Docker_kafka_core;
 ./build.sh;
 ```
 
-start contatiner
+## start contatiner
 ```
 cd ..;
 ./run_kafka_core.sh;
 ./stop_kafka_core.sh;
 ```
 
+## pipework [[ref]](https://github.com/jpetazzo/pipework.git)
+pipework.sh
 
-# command orders
+
+## command orders
 docker build --rm -t penolove/centos7:kafka .
 
 docker run -ti penolove/centos7:kafka
