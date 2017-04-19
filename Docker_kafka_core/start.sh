@@ -1,10 +1,10 @@
 #make sure each serve.peoperties has unique id
-zookeep="y"
+zookeep="n"
 zookeeper_ip="10.0.20.70:2181"
 broker_id="1"
 
 ######### ip dns setting #########
-cp /etc/hosts ~/hosts.news && sed -i "/master/ s/.*//g" ~/hosts.news &&\
+cp /etc/hosts ~/hosts.news && sed -i "/invpm27/ s/.*//g" ~/hosts.news &&\
 echo '10.0.20.67 invpm27' >> ~/hosts.news;
 echo '10.0.20.68 invpm28' >> ~/hosts.news;
 echo '10.0.20.69 invpm29' >> ~/hosts.news;
