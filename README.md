@@ -1,5 +1,13 @@
 # Docker_kafka
 
+## make sure setting
+- zookeeper ip : Docker_kafka_core/start.sh
+- broker id : Docker_kafka_core/start.sh
+- container ip : pipework.sh
+- hostname : run_kafka_core.sh
+
+
+
 ## build images
 ```
 cd Docker_kafka_core;
@@ -18,6 +26,7 @@ pipework.sh
 
 
 ## command orders
+
 docker build --rm -t penolove/centos7:kafka .
 
 docker run -ti penolove/centos7:kafka
