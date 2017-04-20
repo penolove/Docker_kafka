@@ -1,2 +1,2 @@
-docker run -ti -h master --name kafka_core \
+docker run -ti -h invpm27 --name kafka_core \
     -d penolove/centos7:kafka_core;
