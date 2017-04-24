@@ -1,8 +1,6 @@
-FROM penolove/centos7:spark_core
+FROM penolove/centos7:kafka_core_pre
 
-COPY download.sh /root/download.sh
 COPY start_server.sh /root/start_server.sh
 COPY start.sh /root/start.sh
-RUN /root/download.sh;  
 
 ENTRYPOINT  /root/start.sh && /root/start_server.sh && tail -f /dev/null;
