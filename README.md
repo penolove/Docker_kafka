@@ -3,9 +3,10 @@
 ## make sure setting
 - zookeeper ip : Docker_kafka_core/start.sh
 - broker id : Docker_kafka_core/start.sh
-- container ip : pipework.sh
-- hostname : run_kafka_core.sh
+- container ip : pipework.sh (needn't if share net)
+- hostname : run_kafka_core.sh (needn't if share net)
 
+master needn't run start_server.sh in Docker file
 
 
 ## build images

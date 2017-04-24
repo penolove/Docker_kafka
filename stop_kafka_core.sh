@@ -1,2 +1,2 @@
 docker kill kafka_core;
-docker rm $(docker ps -qa); 
+docker rm kafka_core; 
