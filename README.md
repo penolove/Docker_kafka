@@ -1,7 +1,11 @@
 # Docker_kafka
 
+you can edit start.sh after build.sh
+since run kafka_core will mount to container
+
 ## make sure setting
 - zookeeper ip : Docker_kafka_core/start.sh
+- host ip : Docker_kafka_core/start.sh
 - broker id : Docker_kafka_core/start.sh
 - container ip : pipework.sh (needn't if share net)
 - hostname : run_kafka_core.sh (needn't if share net)

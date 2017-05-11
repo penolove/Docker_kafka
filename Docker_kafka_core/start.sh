@@ -1,7 +1,7 @@
 #make sure each serve.peoperties has unique id
 zookeep="n"
 zookeeper_ip="10.0.20.70:2181"
-host_ip="10.0.20.67"
+host_ip="10.0.20.68"
 broker_id="1"
 
 ######### ip dns setting #########
