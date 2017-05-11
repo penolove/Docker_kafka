@@ -1,6 +1,7 @@
 #make sure each serve.peoperties has unique id
 zookeep="n"
 zookeeper_ip="10.0.20.70:2181"
+host_ip="10.0.20.67"
 broker_id="1"
 
 ######### ip dns setting #########
@@ -16,6 +17,7 @@ yes | cp  ~/hosts.news /etc/hosts ;
 ######### broker.id and zookeeper ip ########
 sed -i "/broker.id=/ s/.*/broker.id=$broker_id/g" /usr/local/kafka_2.11-0.10.2.0/config/server.properties
 sed -i "/zookeeper.connect=/ s/.*/zookeeper.connect=$zookeeper_ip/g" /usr/local/kafka_2.11-0.10.2.0/config/server.properties
+sed -i "/#listeners=PLAINTEXT:\/\/:9092/ s/.*/listeners=PLAINTEXT:\/\/$host_ip:9092/g" /usr/local/kafka_2.11-0.10.2.0/config/server.properties
 ######### broker.id and zookeeper ip ########
 
 
